@@ -5,7 +5,7 @@ honest paper angle, names a backup angle, and lists reviewer objections we
 have evidence for. Everything is computed from raw `result.json` files; we
 never re-run experiments here.
 
-The function is intentionally tolerant of missing files — the orchestrator may
+The function is intentionally tolerant of missing files - the orchestrator may
 have skipped phases that failed.
 """
 

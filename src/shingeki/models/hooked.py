@@ -10,7 +10,7 @@ Both backends expose the same public surface:
   - `cfg.n_layers`, `cfg.d_model`, `cfg.n_heads`, `cfg.d_head`
   - `tokenizer`
   - `device`
-  - `W_U`  — unembedding matrix (vocab_size, d_model)  [TL convention]
+  - `W_U`  - unembedding matrix (vocab_size, d_model)  [TL convention]
   - `forward(input_ids) -> logits[B, T, V]`
   - `run_with_cache(input_ids, names: list[str]) -> (logits, dict[str, Tensor])`
   - `run_with_hooks(input_ids, fwd_hooks: list[(name, fn)]) -> logits`

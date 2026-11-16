@@ -1,4 +1,4 @@
-"""`shingeki tier2 ...` — patching, steering, ablation."""
+"""`shingeki tier2 ...` - patching, steering, ablation."""
 
 from __future__ import annotations
 
@@ -23,7 +23,7 @@ def patch_resid_cmd(
     fmt: str = typer.Option("yesno"),
     n: Optional[int] = typer.Option(None),
 ):
-    """Exp 7 — residual-stream patching, final token, all layers."""
+    """Exp 7 - residual-stream patching, final token, all layers."""
     from shingeki.patching.residual import sweep_layers
 
     m = load_hooked(model_id)
@@ -42,7 +42,7 @@ def patch_component_cmd(
     direction: str = typer.Option("S_to_C"),
     layers: Optional[str] = typer.Option(None, help="comma-separated layer indices"),
 ):
-    """Exp 8 — component patching across layers."""
+    """Exp 8 - component patching across layers."""
     from shingeki.patching.component import component_layer_heatmap
 
     m = load_hooked(model_id)
@@ -59,7 +59,7 @@ def patch_token_cmd(
     direction: str = typer.Option("S_to_C"),
     layers: Optional[str] = typer.Option(None),
 ):
-    """Exp 9 — token-position patching."""
+    """Exp 9 - token-position patching."""
     from shingeki.patching.token_position import token_position_heatmap
 
     m = load_hooked(model_id)
@@ -75,7 +75,7 @@ def attn_source_cmd(
     model_id: str = typer.Option("gemma3-4b-it"),
     layers: Optional[str] = typer.Option(None),
 ):
-    """Exp 10 — attention-source analysis."""
+    """Exp 10 - attention-source analysis."""
     from shingeki.patching.attention_source import attention_source_bundle
 
     m = load_hooked(model_id)
@@ -92,7 +92,7 @@ def patch_head_cmd(
     direction: str = typer.Option("S_to_C"),
     layers: Optional[str] = typer.Option(None),
 ):
-    """Exp 11 — per-head patching."""
+    """Exp 11 - per-head patching."""
     from shingeki.patching.head import sweep_heads
 
     m = load_hooked(model_id)
@@ -109,7 +109,7 @@ def mlp_neuron_cmd(
     layer: int = typer.Option(...),
     k_values: str = typer.Option("16,64,256"),
 ):
-    """Exp 12 — MLP neuron localisation."""
+    """Exp 12 - MLP neuron localisation."""
     from shingeki.patching.mlp_neuron import neuron_localization_bundle
 
     m = load_hooked(model_id)
@@ -127,7 +127,7 @@ def steer_cmd(
     layer: int = typer.Option(...),
     alpha: float = typer.Option(4.0),
 ):
-    """Exp 13 — steering sweep (8 directions × 3 modes + controls)."""
+    """Exp 13 - steering sweep (8 directions × 3 modes + controls)."""
     from shingeki.steering.sweep import steering_sweep_bundle
 
     m = load_hooked(model_id)
@@ -148,7 +148,7 @@ def ablate_cmd(
     pos_class: str = typer.Option("sympathetic"),
     neg_class: str = typer.Option("condemning"),
 ):
-    """Exp 14 — projection ablation using a saved probe direction."""
+    """Exp 14 - projection ablation using a saved probe direction."""
     import json
     from pathlib import Path
 

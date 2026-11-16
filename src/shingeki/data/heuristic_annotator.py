@@ -123,7 +123,7 @@ def _decision_maker_spans(text: str, name: str) -> list[tuple[int, int]]:
     # full name + each part
     for term in [name] + parts:
         spans += _multi_word_spans(text, [term.lower()])
-    # also pronoun-class (first or third) — pick by whether the framing reads first-person
+    # also pronoun-class (first or third) - pick by whether the framing reads first-person
     # we don't know that here, so we accept both first-person and third-person pronouns
     spans += _word_spans(text, PRONOUNS_FIRST | PRONOUNS_THIRD)
     return spans

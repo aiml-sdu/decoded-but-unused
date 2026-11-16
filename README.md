@@ -4,6 +4,8 @@ Code, data and result summaries for
 
 > Phongsakon Mark Konrad, Toygar Tanyel, Serkan Ayvaz. *Decoded but Unused: Instruction Tuning Routes Moral Framing into the Judgment Readout.* arXiv, 2026. An earlier version was presented at the ICML 2026 Workshop on Mechanistic Interpretability (Seoul).
 
+[Project page](https://aiml-sdu.github.io/decoded-but-unused-page/) · [OpenReview](https://openreview.net/forum?id=da9ylT2doy) · arXiv (identifier to follow)
+
 Language models change their moral verdicts when the same event is reframed. We ask where in the network this happens. We compare one matched pair, Gemma-3-4B pretrained (PT) and instruction-tuned (IT), on 100 moral dilemmas from two fictional sources, each written in a sympathetic, a condemning and an abstract framing. The framing label is linearly decodable in both checkpoints, but only the IT checkpoint uses it. Its paired sympathetic-minus-condemning shift is +12.18 logits against +0.04 in PT. At layer 25, the IT framing direction aligns with the Yes/No readout 8.4 times more strongly than in PT. Patching, a ten-head writer set and a rank-4 subspace locate the pathway, and the behavioural shift replicates in ten instruction-tuned models from three families. In this pair and on this dataset, instruction tuning changes how the representation is read out, not whether it exists.
 
 ## Contents
@@ -62,10 +64,9 @@ All experiments ran on one NVIDIA B200 (180 GB) in BF16. Every model up to 32B p
 
 - The residual and head patching helpers write the clean activation at the corrupt prompt's final index. When the clean prompt is longer, that is an earlier clean token rather than the clean final token.
 - `run_asymmetric_patching.py` as released loads D0 only. The stored n = 100 summary in `paper_results/asymmetric_patching_n100/` was produced with the full testbed.
+- The scripts for the head ablation, the readout audit and the sentiment controls are not in this release. Their result summaries are included.
 
-- The scripts for the head ablation, the readout audit and the sentiment controls are not in this release. Their result summaries are, and the scripts will be added.
-
-These will be addressed in a later version.
+All three will be addressed in a later release.
 
 ## Citation
 

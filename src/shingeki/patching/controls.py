@@ -57,7 +57,7 @@ def random_clean_source_control(
             return new
 
         patched = model.run_with_hooks(corrupt.input_ids, [(name, hook)], attention_mask=corrupt.attention_mask)
-        # the "clean score" baseline here is the donor's clean — but we report
+        # the "clean score" baseline here is the donor's clean - but we report
         # recovery toward the donor, since cross-triplet patching may be ill-defined.
         donor_logits = model(clean.input_ids, clean.attention_mask)
         corr_logits = model(corrupt.input_ids, corrupt.attention_mask)

@@ -1,4 +1,4 @@
-"""`shingeki tier3 ...` — generality experiments."""
+"""`shingeki tier3 ...` - generality experiments."""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ def anon_cmd(
     model_id: str = typer.Option("gemma3-4b-it"),
     fmt: str = typer.Option("yesno"),
 ):
-    """Exp 16 — anonymized AoT (D2): behaviour + probe + lens."""
+    """Exp 16 - anonymized AoT (D2): behaviour + probe + lens."""
     tier1.behavior_cmd(model_id=model_id, dataset="d2", fmt=fmt, n=None)
     tier1.probe_cmd(model_id=model_id, dataset="d2", fmt=fmt, layers=None)
     tier1.lens_cmd(model_id=model_id, dataset="d2", fmt=fmt)
@@ -27,7 +27,7 @@ def style_cmd(
     model_id: str = typer.Option("gemma3-4b-it"),
     fmt: str = typer.Option("yesno"),
 ):
-    """Exp 17 — style-controlled (D1): behaviour + probe + lens."""
+    """Exp 17 - style-controlled (D1): behaviour + probe + lens."""
     tier1.behavior_cmd(model_id=model_id, dataset="d1", fmt=fmt, n=None)
     tier1.probe_cmd(model_id=model_id, dataset="d1", fmt=fmt, layers=None)
     tier1.lens_cmd(model_id=model_id, dataset="d1", fmt=fmt)
@@ -37,7 +37,7 @@ def style_cmd(
 def moralchoice_cmd(
     model_id: str = typer.Option("gemma3-4b-it"),
 ):
-    """Exp 18 — MoralChoice-Frame ambiguity test (A/B logit gap)."""
+    """Exp 18 - MoralChoice-Frame ambiguity test (A/B logit gap)."""
     from shingeki.behavior.scoring import score_moralchoice
     from shingeki.cli.tier1 import _family
     from shingeki.data.moralchoice import load_d3
@@ -65,7 +65,7 @@ def ethics_cmd(
     n: int = typer.Option(50),
     subset: str = typer.Option("commonsense"),
 ):
-    """Exp 19 — ETHICS appendix sanity check."""
+    """Exp 19 - ETHICS appendix sanity check."""
     from shingeki.data.ethics import load_d4
 
     rows = load_d4(subset=subset, n=n)
@@ -74,7 +74,7 @@ def ethics_cmd(
 
 @app.command("gemma-pt-vs-it")
 def gemma_pt_vs_it_cmd(fmt: str = typer.Option("yesno")):
-    """Exp 20 — PT vs IT comparison."""
+    """Exp 20 - PT vs IT comparison."""
     tier1.behavior_cmd(model_id="gemma3-4b-it", dataset="d0", fmt=fmt)
     tier1.behavior_cmd(model_id="gemma3-4b-pt", dataset="d0", fmt=fmt)
     tier1.probe_cmd(model_id="gemma3-4b-it", dataset="d0", fmt=fmt)
@@ -83,7 +83,7 @@ def gemma_pt_vs_it_cmd(fmt: str = typer.Option("yesno")):
 
 @app.command("gemma2")
 def gemma2_cmd(fmt: str = typer.Option("yesno")):
-    """Exp 21 — Gemma-2 2B-IT cheap replication."""
+    """Exp 21 - Gemma-2 2B-IT cheap replication."""
     tier1.behavior_cmd(model_id="gemma2-2b-it", dataset="d0", fmt=fmt)
     tier1.probe_cmd(model_id="gemma2-2b-it", dataset="d0", fmt=fmt)
     tier1.lens_cmd(model_id="gemma2-2b-it", dataset="d0", fmt=fmt)
@@ -91,7 +91,7 @@ def gemma2_cmd(fmt: str = typer.Option("yesno")):
 
 @app.command("qwen")
 def qwen_cmd(fmt: str = typer.Option("yesno")):
-    """Exp 22 — Qwen-2.5 3B-Instruct cross-family check."""
+    """Exp 22 - Qwen-2.5 3B-Instruct cross-family check."""
     tier1.behavior_cmd(model_id="qwen25-3b-it", dataset="d0", fmt=fmt)
     tier1.probe_cmd(model_id="qwen25-3b-it", dataset="d0", fmt=fmt)
     tier1.lens_cmd(model_id="qwen25-3b-it", dataset="d0", fmt=fmt)

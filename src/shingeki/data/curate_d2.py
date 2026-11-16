@@ -1,7 +1,7 @@
 """Anonymized AoT (D2) builder.
 
 Applies a deterministic name/lore mapping to each AoT triplet. The mapping is
-load-bearing — it is what removes the "model recognises AoT lore" confound — so
+load-bearing - it is what removes the "model recognises AoT lore" confound - so
 the map is checked into the repo (`data/d2_anonymized/name_map.json`).
 
 This is intentionally a stub: only a minimal core mapping ships. Manual curation

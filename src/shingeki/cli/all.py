@@ -1,4 +1,4 @@
-"""`shingeki run ...` — composite runners."""
+"""`shingeki run ...` - composite runners."""
 
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ def submission_min(
     model_id: str = typer.Option("gemma3-4b-it"),
     fmt: str = typer.Option("yesno"),
 ):
-    """Plan §16 'Submission-minimum plan' — Tier-1 + key Tier-2/3 pieces."""
+    """Minimal run: all Tier-1 experiments plus the key Tier-2 and Tier-3 pieces."""
     tier1.behavior_cmd(model_id=model_id, dataset="d0", fmt=fmt)
     tier1.robustness_cmd(model_id=model_id, dataset="d0", formats="yesno,ab,justified,acceptable")
     tier1.cosine_cmd(model_id=model_id, dataset="d0", fmt=fmt)
@@ -39,7 +39,7 @@ def deep_discovery(
     component_layer: str = typer.Option(None, help="comma-separated layer list for component patching"),
     steer_layer: int = typer.Option(28),
 ):
-    """Plan §16 'Deep-discovery plan' — Tier 2 + 3 follow-ons."""
+    """Follow-up run: the remaining Tier-2 and Tier-3 experiments."""
     tier2.patch_component_cmd(model_id=model_id, dataset="d0", direction="S_to_C", layers=component_layer)
     tier2.patch_token_cmd(model_id=model_id, direction="S_to_C", layers=component_layer)
     tier2.attn_source_cmd(model_id=model_id, layers=component_layer)

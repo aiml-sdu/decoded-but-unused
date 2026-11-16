@@ -51,7 +51,7 @@ def _fit_predict(
 
 
 def _ensure_same_classes(y_tr: np.ndarray, y_te: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    """Restrict to classes present in both splits — defensive guard for tiny D1."""
+    """Restrict to classes present in both splits - defensive guard for tiny D1."""
     common = np.intersect1d(np.unique(y_tr), np.unique(y_te))
     tr_mask = np.isin(y_tr, common)
     te_mask = np.isin(y_te, common)

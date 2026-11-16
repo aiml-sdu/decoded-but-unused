@@ -86,7 +86,7 @@ COL = {
 
 
 # =====================================================================
-# FIGURE 1 — schematic (PT vs IT routing geometry)
+# FIGURE 1 - schematic (PT vs IT routing geometry)
 # =====================================================================
 def figure1():
     from matplotlib.patches import Arc, FancyArrowPatch, FancyBboxPatch
@@ -167,7 +167,7 @@ def figure1():
 
 
 # =====================================================================
-# FIGURE 2 — combined probe, alignment, and intervention summary
+# FIGURE 2 - combined probe, alignment, and intervention summary
 # =====================================================================
 def figure2():
     pt_probe = [0.933,0.908,0.875,0.858,0.883,0.867,0.858,0.892,0.883,0.925,0.900,0.908,0.858,0.917,0.875,0.850,0.883,0.883,0.875,0.900,0.908,0.942,0.925,0.925,0.917,0.925,0.908,0.925,0.908,0.858,0.875,0.858,0.842,0.825]
@@ -271,7 +271,7 @@ def figure2():
 
 
 # =====================================================================
-# FIGURE 3 — cross-model behaviour + alignment (2 panels, FULL WIDTH)
+# FIGURE 3 - cross-model behaviour + alignment (2 panels, FULL WIDTH)
 # =====================================================================
 def figure3():
     rows = [
@@ -350,7 +350,7 @@ def figure3():
 
 
 # =====================================================================
-# FIGURE 4 — consolidated intervention evidence
+# FIGURE 4 - consolidated intervention evidence
 # =====================================================================
 def figure4():
     import json
@@ -510,7 +510,7 @@ def figure4():
 
 
 # =====================================================================
-# FIGURE 5 — subspace ablation specificity (L=25, AoT-40)
+# FIGURE 5 - subspace ablation specificity (L=25, AoT-40)
 # =====================================================================
 def figure5():
     labels = [
@@ -550,7 +550,7 @@ def figure5():
 
 
 # =====================================================================
-# FIGURE 7 — component x layer recovery heatmap (Gemma-3-4B-IT, S->C)
+# FIGURE 7 - component x layer recovery heatmap (Gemma-3-4B-IT, S->C)
 # =====================================================================
 def figure7():
     import json

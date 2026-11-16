@@ -4,7 +4,7 @@ Each `emit_figN(...)` writes:
   - one or more `.dat` tables under `manuscript/data/`
   - a TikZ/pgfplots `.tex` snippet under `manuscript/figures/` that loads them
 
-The manuscript's `main.tex` includes pgfplots and `\input`s these snippets.
+The manuscript's `main.tex` includes pgfplots and `\\input`s these snippets.
 """
 
 from __future__ import annotations

@@ -3,13 +3,13 @@
 Tests whether GoT > AoT framing effect could be a prose-style artifact rather
 than genuine moral-content generalization. Five checks:
 
-  1. Length distribution per (source, frame) — outliers, variance, range.
-  2. Type-token ratio per (source, frame) — vocabulary diversity.
-  3. Within-source frame-template overlap — do all GoT sympathetic prompts
+  1. Length distribution per (source, frame) - outliers, variance, range.
+  2. Type-token ratio per (source, frame) - vocabulary diversity.
+  3. Within-source frame-template overlap - do all GoT sympathetic prompts
      start with similar tokens? Same for condemning.
-  4. Lexical "sentinel" tokens — counts of common opening tokens like
+  4. Lexical "sentinel" tokens - counts of common opening tokens like
      "I had", "I was", "I had to" that might correlate with frame label.
-  5. Cross-source vocabulary intersection — do AoT and GoT share enough
+  5. Cross-source vocabulary intersection - do AoT and GoT share enough
      vocabulary that the moral concept is genuinely cross-domain?
 
 Output: prose_diagnostics.json + prose_diagnostics_summary.csv.

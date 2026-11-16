@@ -2,7 +2,7 @@
 
 The probe is a multinomial logistic regression. Inputs are [N_prompts, D]
 hidden states at a single layer; labels are encoded framings. Groups are
-triplet ids — every fold leaves out *all three framings* of one dilemma so
+triplet ids - every fold leaves out *all three framings* of one dilemma so
 the probe is never tested on any token sequence it was trained on.
 
 The fitted probe's weight vector for the (sympathetic, condemning) contrast

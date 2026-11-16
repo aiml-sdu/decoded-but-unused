@@ -1,4 +1,4 @@
-"""`shingeki tier1 ...` — behaviour, robustness, cosine, probe, lens, geometry."""
+"""`shingeki tier1 ...` - behaviour, robustness, cosine, probe, lens, geometry."""
 
 from __future__ import annotations
 
@@ -42,7 +42,7 @@ def behavior_cmd(
     fmt: str = typer.Option("yesno"),
     n: Optional[int] = typer.Option(None, help="limit to first n triplets"),
 ):
-    """Exp 1 — behavioural validation."""
+    """Exp 1 - behavioural validation."""
     from shingeki.behavior.scoring import behavioral_validation_bundle
 
     m = load_hooked(model_id)
@@ -65,7 +65,7 @@ def robustness_cmd(
     dataset: str = typer.Option("d0"),
     formats: str = typer.Option("yesno,ab,justified,acceptable"),
 ):
-    """Exp 2 — answer-token robustness across formats."""
+    """Exp 2 - answer-token robustness across formats."""
     from shingeki.behavior.robustness import robustness_bundle
 
     fmts = tuple(s.strip() for s in formats.split(","))
@@ -84,7 +84,7 @@ def cosine_cmd(
     dataset: str = typer.Option("d0"),
     fmt: str = typer.Option("yesno"),
 ):
-    """Exp 3 — cosine similarity baseline."""
+    """Exp 3 - cosine similarity baseline."""
     from shingeki.geometry.cosine import cosine_bundle
 
     m = load_hooked(model_id)
@@ -101,7 +101,7 @@ def probe_cmd(
     fmt: str = typer.Option("yesno"),
     layers: Optional[str] = typer.Option(None, help="comma-separated, e.g. 0,8,16,24,32"),
 ):
-    """Exp 4 — linear probes with LOTO + controls."""
+    """Exp 4 - linear probes with LOTO + controls."""
     from shingeki.io.results import ResultBundle
     from shingeki.probing.controls import length_only_baseline, random_label_baseline, tfidf_baseline
     from shingeki.probing.linear import cache_activations, fit_probes_all_layers
@@ -163,7 +163,7 @@ def lens_cmd(
     dataset: str = typer.Option("d0"),
     fmt: str = typer.Option("yesno"),
 ):
-    """Exp 5 — logit-lens trajectory."""
+    """Exp 5 - logit-lens trajectory."""
     from shingeki.lens.logit_lens import logit_lens_bundle
 
     m = load_hooked(model_id)
@@ -179,7 +179,7 @@ def geometry_cmd(
     dataset: str = typer.Option("d0"),
     fmt: str = typer.Option("yesno"),
 ):
-    """Exp 6 — framing-vs-judgment alignment by layer."""
+    """Exp 6 - framing-vs-judgment alignment by layer."""
     import torch
 
     from shingeki.activations.extract import get_residual_stream

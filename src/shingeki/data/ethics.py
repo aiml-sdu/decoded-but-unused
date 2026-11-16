@@ -1,4 +1,4 @@
-"""ETHICS (D4) appendix loader — stub.
+"""ETHICS (D4) appendix loader - stub.
 
 ETHICS spans commonsense morality, deontology, justice, utilitarianism, and
 virtue. For the workshop we only need a small behavioural sanity check, so this

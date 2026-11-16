@@ -37,7 +37,7 @@ OPENROUTER_MODELS = [
 ]
 ANNOTATOR_MODEL = "anthropic/claude-haiku-4.5"
 
-# SAE config (Gemma Scope 2) — kept for future SAE experiments; not used in Tier 1+2+3.
+# SAE config (Gemma Scope 2) - kept for future SAE experiments; not used in Tier 1+2+3.
 GEMMA_SCOPE_REPO = "google/gemma-scope-3-1b-pt-res"
 
 SEED = 42

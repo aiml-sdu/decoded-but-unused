@@ -18,7 +18,7 @@ def apply_chat_template(text: str, family: ModelFamily, tokenizer) -> str:
     """Return the chat-formatted input string. The tokenizer is consulted only
     when its `apply_chat_template` knows about the family."""
     if family in ("gemma3-it", "gemma2-it", "qwen25-it", "llama31-it"):
-        # Use the tokenizer's chat template if available — it handles each
+        # Use the tokenizer's chat template if available - it handles each
         # family's special tokens correctly.
         try:
             messages = [{"role": "user", "content": text}]
