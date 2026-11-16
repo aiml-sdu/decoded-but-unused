@@ -1,0 +1,23 @@
+.env
+.env.local
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.pytest_cache/
+
+# Model caches and weights
+.cache/
+.hf_cache/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.npz
+
+# Fresh experiment outputs
+runs/
+dist/
+build/
+*.egg-info/

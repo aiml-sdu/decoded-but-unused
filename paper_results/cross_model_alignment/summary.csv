@@ -1,0 +1,10 @@
+spec_id,family,n_layers,d_model,peak_layer,peak_cos
+gemma2-2b-it,gemma2-it,26,2304,24,0.2056
+gemma2-9b-it,gemma2-it,42,3584,40,0.2179
+gemma3-12b-it,gemma3-it,48,3840,36,0.3376
+qwen25-3b-it,qwen25-it,36,2048,31,0.3503
+qwen25-7b-it,qwen25-it,28,3584,24,0.2763
+qwen25-14b-it,qwen25-it,48,5120,43,0.2903
+gemma2-27b-it,gemma2-it,46,4608,42,0.2291
+llama31-8b-it,llama31-it,32,4096,29,0.2489
+qwen25-32b-it,qwen25-it,64,5120,63,0.2824

@@ -1,0 +1,20 @@
+{
+  "exp_id": "exp04_probe_n100",
+  "config": {
+    "model_id": "gemma3-4b-it",
+    "dataset": "n100",
+    "n_triplets": 100
+  },
+  "git_sha": "67dac9f6192e",
+  "git_dirty": true,
+  "python": "3.12.3",
+  "deps": {
+    "torch": "2.11.0",
+    "transformers": "5.4.0",
+    "transformer-lens": "2.16.1",
+    "datasets": "4.8.4",
+    "scikit-learn": "1.8.0",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  }
+}

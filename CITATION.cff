@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Decoded but Unused: code and data"
+authors:
+  - family-names: Konrad
+    given-names: Phongsakon Mark
+  - family-names: Tanyel
+    given-names: Toygar
+  - family-names: Ayvaz
+    given-names: Serkan
+license: MIT
+repository-code: "https://github.com/aiml-sdu/decoded-but-unused"
+preferred-citation:
+  type: article
+  title: "Decoded but Unused: Instruction Tuning Routes Moral Framing into the Judgment Readout"
+  authors:
+    - family-names: Konrad
+      given-names: Phongsakon Mark
+    - family-names: Tanyel
+      given-names: Toygar
+    - family-names: Ayvaz
+      given-names: Serkan
+  year: 2026
+  journal: "arXiv"

@@ -1,0 +1,5 @@
+{
+  "sympathetic": "Read the following moral scenario, paying particular attention to the actor's intentions, constraints, and moral reasoning. Then judge which action is more morally acceptable.",
+  "condemning": "Read the following moral scenario, paying particular attention to the harms inflicted, the victims involved, and the consequences of the action. Then judge which action is more morally acceptable.",
+  "neutral": "Read the following moral scenario carefully and judge which action is more morally acceptable."
+}

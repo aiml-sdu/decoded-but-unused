@@ -1,0 +1,4 @@
+layer,judge_only_shrink,pca_full_shrink,pca_perp_shrink,verdict_separable_from_judgment
+20,+0.2041,+0.7591,+0.8215,SEPARABLE
+25,+0.6512,+0.9872,+0.8166,SEPARABLE
+28,+0.8150,+0.9359,+0.5239,FUSED-WITH-JUDGE

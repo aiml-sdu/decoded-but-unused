@@ -1,0 +1,20 @@
+{
+  "exp_id": "exp03_cosine_n100",
+  "config": {
+    "fmt": "yesno",
+    "n_triplets": 100,
+    "n_layers": 34
+  },
+  "git_sha": "f195bace571b",
+  "git_dirty": false,
+  "python": "3.12.3",
+  "deps": {
+    "torch": "2.11.0",
+    "transformers": "5.4.0",
+    "transformer-lens": "2.16.1",
+    "datasets": "4.8.4",
+    "scikit-learn": "1.8.0",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  }
+}

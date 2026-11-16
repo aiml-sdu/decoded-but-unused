@@ -1,0 +1,951 @@
+{
+  "exp_id": "exp20_pt_behavior_n100",
+  "config": {
+    "model_id": "google/gemma-3-4b-pt",
+    "fmt": "yesno",
+    "n_triplets": 100,
+    "answer_format_single_token": true
+  },
+  "metrics": {
+    "S_vs_C": {
+      "n_triplets": 100,
+      "mean_shift": 0.04125,
+      "median_shift": 0.09375,
+      "ci95_lo": -0.086875,
+      "ci95_hi": 0.163125,
+      "frac_sym_gt_cond": 0.51,
+      "perm_p": 0.5234476552344766,
+      "cohens_dz": 0.06458535142516685,
+      "shifts": [
+        -0.9375,
+        0.25,
+        -0.75,
+        0.75,
+        0.5625,
+        0.5625,
+        -2.0,
+        0.8125,
+        0.1875,
+        -0.5,
+        0.125,
+        -0.125,
+        0.0,
+        -0.4375,
+        0.25,
+        1.0625,
+        -1.375,
+        0.0625,
+        -0.125,
+        0.5,
+        -0.125,
+        0.375,
+        0.0,
+        0.25,
+        0.5,
+        0.125,
+        -0.1875,
+        0.0,
+        -0.6875,
+        0.875,
+        -0.375,
+        -0.375,
+        0.0,
+        0.625,
+        -0.3125,
+        0.625,
+        -0.3125,
+        -0.5,
+        -0.375,
+        0.625,
+        -0.125,
+        0.0,
+        1.375,
+        0.5625,
+        -0.25,
+        0.5625,
+        0.0,
+        0.75,
+        0.75,
+        -2.125,
+        -1.5,
+        -0.25,
+        0.125,
+        0.1875,
+        -0.0625,
+        -0.125,
+        0.125,
+        -0.6875,
+        -0.3125,
+        -1.3125,
+        0.6875,
+        -0.3125,
+        0.5625,
+        0.25,
+        0.9375,
+        -0.5,
+        0.25,
+        0.4375,
+        0.375,
+        0.5,
+        0.375,
+        0.0,
+        0.25,
+        -0.125,
+        -0.8125,
+        0.125,
+        -1.1875,
+        -0.25,
+        0.3125,
+        0.6875,
+        -0.25,
+        -0.1875,
+        0.875,
+        -0.8125,
+        0.1875,
+        -0.0625,
+        -0.0625,
+        1.125,
+        1.25,
+        0.625,
+        0.125,
+        0.625,
+        0.375,
+        -0.125,
+        -0.125,
+        0.5,
+        -0.625,
+        -0.375,
+        0.8125,
+        0.375
+      ]
+    },
+    "S_vs_A": {
+      "n_triplets": 100,
+      "mean_shift": 0.151875,
+      "median_shift": 0.125,
+      "ci95_lo": 0.0175,
+      "ci95_hi": 0.2875,
+      "frac_sym_gt_cond": 0.53,
+      "perm_p": 0.028997100289971003,
+      "cohens_dz": 0.21855442169969122,
+      "shifts": [
+        -0.5625,
+        0.5,
+        -0.5,
+        0.5,
+        0.375,
+        0.5,
+        -0.625,
+        0.625,
+        0.875,
+        -0.8125,
+        -0.625,
+        0.125,
+        -0.125,
+        1.5625,
+        0.625,
+        1.0,
+        0.125,
+        0.6875,
+        -0.125,
+        0.125,
+        -0.75,
+        1.375,
+        -0.25,
+        -0.625,
+        1.0625,
+        -0.3125,
+        0.6875,
+        -0.5,
+        -0.5625,
+        0.75,
+        0.625,
+        0.0,
+        -0.125,
+        -0.125,
+        0.375,
+        0.875,
+        -0.875,
+        0.0,
+        0.375,
+        0.4375,
+        -0.25,
+        -1.125,
+        0.625,
+        0.875,
+        -1.0,
+        1.5625,
+        0.625,
+        -0.625,
+        1.375,
+        -1.75,
+        -0.125,
+        0.625,
+        0.875,
+        0.5,
+        0.0625,
+        0.25,
+        -0.0625,
+        -1.1875,
+        0.25,
+        -0.5,
+        -0.4375,
+        -0.6875,
+        0.25,
+        1.0,
+        1.0625,
+        -0.8125,
+        1.0,
+        0.875,
+        0.25,
+        -0.625,
+        0.25,
+        0.3125,
+        -0.375,
+        0.5,
+        -0.1875,
+        0.0,
+        -0.5625,
+        -0.5,
+        -0.375,
+        0.375,
+        1.4375,
+        1.625,
+        0.0,
+        -0.125,
+        0.75,
+        0.3125,
+        -0.5,
+        0.125,
+        0.3125,
+        0.0,
+        -0.25,
+        0.0,
+        0.8125,
+        -0.3125,
+        -0.25,
+        1.0,
+        -1.0,
+        -0.125,
+        1.25,
+        1.125
+      ]
+    },
+    "C_vs_A": {
+      "n_triplets": 100,
+      "mean_shift": 0.110625,
+      "median_shift": 0.125,
+      "ci95_lo": -0.020625,
+      "ci95_hi": 0.24689062499999978,
+      "frac_sym_gt_cond": 0.51,
+      "perm_p": 0.10648935106489352,
+      "cohens_dz": 0.16183917395991054,
+      "shifts": [
+        0.375,
+        0.25,
+        0.25,
+        -0.25,
+        -0.1875,
+        -0.0625,
+        1.375,
+        -0.1875,
+        0.6875,
+        -0.3125,
+        -0.75,
+        0.25,
+        -0.125,
+        2.0,
+        0.375,
+        -0.0625,
+        1.5,
+        0.625,
+        0.0,
+        -0.375,
+        -0.625,
+        1.0,
+        -0.25,
+        -0.875,
+        0.5625,
+        -0.4375,
+        0.875,
+        -0.5,
+        0.125,
+        -0.125,
+        1.0,
+        0.375,
+        -0.125,
+        -0.75,
+        0.6875,
+        0.25,
+        -0.5625,
+        0.5,
+        0.75,
+        -0.1875,
+        -0.125,
+        -1.125,
+        -0.75,
+        0.3125,
+        -0.75,
+        1.0,
+        0.625,
+        -1.375,
+        0.625,
+        0.375,
+        1.375,
+        0.875,
+        0.75,
+        0.3125,
+        0.125,
+        0.375,
+        -0.1875,
+        -0.5,
+        0.5625,
+        0.8125,
+        -1.125,
+        -0.375,
+        -0.3125,
+        0.75,
+        0.125,
+        -0.3125,
+        0.75,
+        0.4375,
+        -0.125,
+        -1.125,
+        -0.125,
+        0.3125,
+        -0.625,
+        0.625,
+        0.625,
+        -0.125,
+        0.625,
+        -0.25,
+        -0.6875,
+        -0.3125,
+        1.6875,
+        1.8125,
+        -0.875,
+        0.6875,
+        0.5625,
+        0.375,
+        -0.4375,
+        -1.0,
+        -0.9375,
+        -0.625,
+        -0.375,
+        -0.625,
+        0.4375,
+        -0.1875,
+        -0.125,
+        0.5,
+        -0.375,
+        0.25,
+        0.4375,
+        0.75
+      ]
+    },
+    "scores_per_triplet": [
+      {
+        "id": "aot-001",
+        "sympathetic": -0.6875,
+        "condemning": 0.25,
+        "abstract": -0.125
+      },
+      {
+        "id": "aot-002",
+        "sympathetic": 0.25,
+        "condemning": 0.0,
+        "abstract": -0.25
+      },
+      {
+        "id": "aot-003",
+        "sympathetic": -0.5,
+        "condemning": 0.25,
+        "abstract": 0.0
+      },
+      {
+        "id": "aot-004",
+        "sympathetic": 0.375,
+        "condemning": -0.375,
+        "abstract": -0.125
+      },
+      {
+        "id": "aot-005",
+        "sympathetic": -0.125,
+        "condemning": -0.6875,
+        "abstract": -0.5
+      },
+      {
+        "id": "aot-006",
+        "sympathetic": 0.25,
+        "condemning": -0.3125,
+        "abstract": -0.25
+      },
+      {
+        "id": "aot-007",
+        "sympathetic": -0.375,
+        "condemning": 1.625,
+        "abstract": 0.25
+      },
+      {
+        "id": "aot-008",
+        "sympathetic": 0.375,
+        "condemning": -0.4375,
+        "abstract": -0.25
+      },
+      {
+        "id": "aot-009",
+        "sympathetic": 0.375,
+        "condemning": 0.1875,
+        "abstract": -0.5
+      },
+      {
+        "id": "aot-010",
+        "sympathetic": -1.125,
+        "condemning": -0.625,
+        "abstract": -0.3125
+      },
+      {
+        "id": "aot-011",
+        "sympathetic": -0.25,
+        "condemning": -0.375,
+        "abstract": 0.375
+      },
+      {
+        "id": "aot-012",
+        "sympathetic": -0.125,
+        "condemning": 0.0,
+        "abstract": -0.25
+      },
+      {
+        "id": "aot-013",
+        "sympathetic": -0.375,
+        "condemning": -0.375,
+        "abstract": -0.25
+      },
+      {
+        "id": "aot-014",
+        "sympathetic": 0.3125,
+        "condemning": 0.75,
+        "abstract": -1.25
+      },
+      {
+        "id": "aot-015",
+        "sympathetic": 0.125,
+        "condemning": -0.125,
+        "abstract": -0.5
+      },
+      {
+        "id": "aot-016",
+        "sympathetic": 0.75,
+        "condemning": -0.3125,
+        "abstract": -0.25
+      },
+      {
+        "id": "aot-017",
+        "sympathetic": -0.5,
+        "condemning": 0.875,
+        "abstract": -0.625
+      },
+      {
+        "id": "aot-018",
+        "sympathetic": -0.0625,
+        "condemning": -0.125,
+        "abstract": -0.75
+      },
+      {
+        "id": "aot-019",
+        "sympathetic": 0.0,
+        "condemning": 0.125,
+        "abstract": 0.125
+      },
+      {
+        "id": "aot-020",
+        "sympathetic": -0.375,
+        "condemning": -0.875,
+        "abstract": -0.5
+      },
+      {
+        "id": "aot-021",
+        "sympathetic": -0.25,
+        "condemning": -0.125,
+        "abstract": 0.5
+      },
+      {
+        "id": "aot-022",
+        "sympathetic": 0.875,
+        "condemning": 0.5,
+        "abstract": -0.5
+      },
+      {
+        "id": "aot-023",
+        "sympathetic": -0.125,
+        "condemning": -0.125,
+        "abstract": 0.125
+      },
+      {
+        "id": "aot-024",
+        "sympathetic": -0.25,
+        "condemning": -0.5,
+        "abstract": 0.375
+      },
+      {
+        "id": "aot-025",
+        "sympathetic": 0.375,
+        "condemning": -0.125,
+        "abstract": -0.6875
+      },
+      {
+        "id": "aot-026",
+        "sympathetic": -0.0625,
+        "condemning": -0.1875,
+        "abstract": 0.25
+      },
+      {
+        "id": "aot-027",
+        "sympathetic": -0.125,
+        "condemning": 0.0625,
+        "abstract": -0.8125
+      },
+      {
+        "id": "aot-028",
+        "sympathetic": -0.625,
+        "condemning": -0.625,
+        "abstract": -0.125
+      },
+      {
+        "id": "aot-029",
+        "sympathetic": -0.9375,
+        "condemning": -0.25,
+        "abstract": -0.375
+      },
+      {
+        "id": "aot-030",
+        "sympathetic": 0.25,
+        "condemning": -0.625,
+        "abstract": -0.5
+      },
+      {
+        "id": "aot-031",
+        "sympathetic": 0.0,
+        "condemning": 0.375,
+        "abstract": -0.625
+      },
+      {
+        "id": "aot-032",
+        "sympathetic": -0.5,
+        "condemning": -0.125,
+        "abstract": -0.5
+      },
+      {
+        "id": "aot-033",
+        "sympathetic": -0.25,
+        "condemning": -0.25,
+        "abstract": -0.125
+      },
+      {
+        "id": "aot-034",
+        "sympathetic": -0.125,
+        "condemning": -0.75,
+        "abstract": 0.0
+      },
+      {
+        "id": "aot-035",
+        "sympathetic": 0.25,
+        "condemning": 0.5625,
+        "abstract": -0.125
+      },
+      {
+        "id": "aot-036",
+        "sympathetic": 0.375,
+        "condemning": -0.25,
+        "abstract": -0.5
+      },
+      {
+        "id": "aot-037",
+        "sympathetic": -0.625,
+        "condemning": -0.3125,
+        "abstract": 0.25
+      },
+      {
+        "id": "aot-038",
+        "sympathetic": -0.75,
+        "condemning": -0.25,
+        "abstract": -0.75
+      },
+      {
+        "id": "aot-039",
+        "sympathetic": 0.125,
+        "condemning": 0.5,
+        "abstract": -0.25
+      },
+      {
+        "id": "aot-040",
+        "sympathetic": 0.25,
+        "condemning": -0.375,
+        "abstract": -0.1875
+      },
+      {
+        "id": "aot-041",
+        "sympathetic": -0.25,
+        "condemning": -0.125,
+        "abstract": 0.0
+      },
+      {
+        "id": "aot-042",
+        "sympathetic": -0.625,
+        "condemning": -0.625,
+        "abstract": 0.5
+      },
+      {
+        "id": "aot-043",
+        "sympathetic": 0.875,
+        "condemning": -0.5,
+        "abstract": 0.25
+      },
+      {
+        "id": "aot-044",
+        "sympathetic": 0.875,
+        "condemning": 0.3125,
+        "abstract": 0.0
+      },
+      {
+        "id": "aot-045",
+        "sympathetic": -0.25,
+        "condemning": 0.0,
+        "abstract": 0.75
+      },
+      {
+        "id": "aot-046",
+        "sympathetic": 0.6875,
+        "condemning": 0.125,
+        "abstract": -0.875
+      },
+      {
+        "id": "aot-047",
+        "sympathetic": 0.5,
+        "condemning": 0.5,
+        "abstract": -0.125
+      },
+      {
+        "id": "aot-048",
+        "sympathetic": 0.5,
+        "condemning": -0.25,
+        "abstract": 1.125
+      },
+      {
+        "id": "aot-049",
+        "sympathetic": 0.625,
+        "condemning": -0.125,
+        "abstract": -0.75
+      },
+      {
+        "id": "aot-050",
+        "sympathetic": -1.625,
+        "condemning": 0.5,
+        "abstract": 0.125
+      },
+      {
+        "id": "got-001",
+        "sympathetic": -0.125,
+        "condemning": 1.375,
+        "abstract": 0.0
+      },
+      {
+        "id": "got-002",
+        "sympathetic": 0.25,
+        "condemning": 0.5,
+        "abstract": -0.375
+      },
+      {
+        "id": "got-003",
+        "sympathetic": 0.375,
+        "condemning": 0.25,
+        "abstract": -0.5
+      },
+      {
+        "id": "got-004",
+        "sympathetic": 0.375,
+        "condemning": 0.1875,
+        "abstract": -0.125
+      },
+      {
+        "id": "got-005",
+        "sympathetic": 0.3125,
+        "condemning": 0.375,
+        "abstract": 0.25
+      },
+      {
+        "id": "got-006",
+        "sympathetic": 0.125,
+        "condemning": 0.25,
+        "abstract": -0.125
+      },
+      {
+        "id": "got-007",
+        "sympathetic": 0.625,
+        "condemning": 0.5,
+        "abstract": 0.6875
+      },
+      {
+        "id": "got-008",
+        "sympathetic": -0.5625,
+        "condemning": 0.125,
+        "abstract": 0.625
+      },
+      {
+        "id": "got-009",
+        "sympathetic": 0.25,
+        "condemning": 0.5625,
+        "abstract": 0.0
+      },
+      {
+        "id": "got-010",
+        "sympathetic": -1.0,
+        "condemning": 0.3125,
+        "abstract": -0.5
+      },
+      {
+        "id": "got-011",
+        "sympathetic": 0.3125,
+        "condemning": -0.375,
+        "abstract": 0.75
+      },
+      {
+        "id": "got-012",
+        "sympathetic": -0.6875,
+        "condemning": -0.375,
+        "abstract": 0.0
+      },
+      {
+        "id": "got-013",
+        "sympathetic": 0.25,
+        "condemning": -0.3125,
+        "abstract": 0.0
+      },
+      {
+        "id": "got-014",
+        "sympathetic": 1.125,
+        "condemning": 0.875,
+        "abstract": 0.125
+      },
+      {
+        "id": "got-015",
+        "sympathetic": 1.1875,
+        "condemning": 0.25,
+        "abstract": 0.125
+      },
+      {
+        "id": "got-016",
+        "sympathetic": -0.3125,
+        "condemning": 0.1875,
+        "abstract": 0.5
+      },
+      {
+        "id": "got-017",
+        "sympathetic": 0.5,
+        "condemning": 0.25,
+        "abstract": -0.5
+      },
+      {
+        "id": "got-018",
+        "sympathetic": 0.75,
+        "condemning": 0.3125,
+        "abstract": -0.125
+      },
+      {
+        "id": "got-019",
+        "sympathetic": 0.375,
+        "condemning": 0.0,
+        "abstract": 0.125
+      },
+      {
+        "id": "got-020",
+        "sympathetic": 0.125,
+        "condemning": -0.375,
+        "abstract": 0.75
+      },
+      {
+        "id": "got-021",
+        "sympathetic": -0.25,
+        "condemning": -0.625,
+        "abstract": -0.5
+      },
+      {
+        "id": "got-022",
+        "sympathetic": -0.25,
+        "condemning": -0.25,
+        "abstract": -0.5625
+      },
+      {
+        "id": "got-023",
+        "sympathetic": -0.125,
+        "condemning": -0.375,
+        "abstract": 0.25
+      },
+      {
+        "id": "got-024",
+        "sympathetic": 0.375,
+        "condemning": 0.5,
+        "abstract": -0.125
+      },
+      {
+        "id": "got-025",
+        "sympathetic": -0.375,
+        "condemning": 0.4375,
+        "abstract": -0.1875
+      },
+      {
+        "id": "got-026",
+        "sympathetic": 0.125,
+        "condemning": 0.0,
+        "abstract": 0.125
+      },
+      {
+        "id": "got-027",
+        "sympathetic": -0.4375,
+        "condemning": 0.75,
+        "abstract": 0.125
+      },
+      {
+        "id": "got-028",
+        "sympathetic": 0.0,
+        "condemning": 0.25,
+        "abstract": 0.5
+      },
+      {
+        "id": "got-029",
+        "sympathetic": 0.375,
+        "condemning": 0.0625,
+        "abstract": 0.75
+      },
+      {
+        "id": "got-030",
+        "sympathetic": 0.5,
+        "condemning": -0.1875,
+        "abstract": 0.125
+      },
+      {
+        "id": "got-031",
+        "sympathetic": 1.0625,
+        "condemning": 1.3125,
+        "abstract": -0.375
+      },
+      {
+        "id": "got-032",
+        "sympathetic": 0.125,
+        "condemning": 0.3125,
+        "abstract": -1.5
+      },
+      {
+        "id": "got-033",
+        "sympathetic": 0.375,
+        "condemning": -0.5,
+        "abstract": 0.375
+      },
+      {
+        "id": "got-034",
+        "sympathetic": 0.0,
+        "condemning": 0.8125,
+        "abstract": 0.125
+      },
+      {
+        "id": "got-035",
+        "sympathetic": -0.375,
+        "condemning": -0.5625,
+        "abstract": -1.125
+      },
+      {
+        "id": "got-036",
+        "sympathetic": 0.3125,
+        "condemning": 0.375,
+        "abstract": 0.0
+      },
+      {
+        "id": "got-037",
+        "sympathetic": -0.25,
+        "condemning": -0.1875,
+        "abstract": 0.25
+      },
+      {
+        "id": "got-038",
+        "sympathetic": 0.375,
+        "condemning": -0.75,
+        "abstract": 0.25
+      },
+      {
+        "id": "got-039",
+        "sympathetic": 0.1875,
+        "condemning": -1.0625,
+        "abstract": -0.125
+      },
+      {
+        "id": "got-040",
+        "sympathetic": 0.375,
+        "condemning": -0.25,
+        "abstract": 0.375
+      },
+      {
+        "id": "got-041",
+        "sympathetic": 0.25,
+        "condemning": 0.125,
+        "abstract": 0.5
+      },
+      {
+        "id": "got-042",
+        "sympathetic": -0.125,
+        "condemning": -0.75,
+        "abstract": -0.125
+      },
+      {
+        "id": "got-043",
+        "sympathetic": 0.6875,
+        "condemning": 0.3125,
+        "abstract": -0.125
+      },
+      {
+        "id": "got-044",
+        "sympathetic": 0.0625,
+        "condemning": 0.1875,
+        "abstract": 0.375
+      },
+      {
+        "id": "got-045",
+        "sympathetic": 0.125,
+        "condemning": 0.25,
+        "abstract": 0.375
+      },
+      {
+        "id": "got-046",
+        "sympathetic": -0.125,
+        "condemning": -0.625,
+        "abstract": -1.125
+      },
+      {
+        "id": "got-047",
+        "sympathetic": -0.5,
+        "condemning": 0.125,
+        "abstract": 0.5
+      },
+      {
+        "id": "got-048",
+        "sympathetic": -0.375,
+        "condemning": 0.0,
+        "abstract": -0.25
+      },
+      {
+        "id": "got-049",
+        "sympathetic": 1.0,
+        "condemning": 0.1875,
+        "abstract": -0.25
+      },
+      {
+        "id": "got-050",
+        "sympathetic": 0.625,
+        "condemning": 0.25,
+        "abstract": -0.5
+      }
+    ]
+  },
+  "figures": [],
+  "notes": ""
+}
